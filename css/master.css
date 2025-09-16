@@ -1,7 +1,8 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #d1cfc9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d1cfc9;
 }
 
 .header {
@@ -54,22 +55,4 @@ body {
 .header-knoppen ul li a:hover {
     background-color: #388E3C;
     color: #ffeb3b;
-}
-
-.Tomatenplant {
-  height: auto;
-  width: 105px;
-  padding: 20px;
-  margin: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 2px 2px 8px 0px;
-}
-
-#Tomatenplant_img {
-  height: 100px;
-  width: auto;
-  border-width: 2px;
-  border-style: solid;
-  border-color: black;
 }

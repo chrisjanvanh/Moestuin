@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verticale Plantenbak</title>
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="javascript/main.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
   <div class="header">
-      <a href="index.php"><img id="header-logo" src="images/moestuin.png" alt="logo"></a>
+      <a href="index.html"><img id="header-logo" src="images/moestuin.png" alt="logo"></a>
       <div class="header-tekst">
           <h3>Automatische moestuin</h3>
       </div>
@@ -19,9 +22,29 @@
           </ul>
       </div>
   </div>
-  <div class="Tomatenplant"> 
-    <img id="Tomatenplant_img" src="images/tomatenplant.png" alt="tomatenplant">
-    <h3>Tomatenplant</h3>
+  <div role="button" id="Tomatenplant" class="Tiles">
+    <img id="Tomatenplant_img" class="img_Tiles" src="images/tomatenplant.png" alt="tomatenplant">
+    <h4>Tomatenplant</h4>
   </div>
+  <div role="button" id="Toevoegen" class="Tiles">
+    <img id="Toevoegen_img" class="img_Tiles" src="images/plus.png" alt="plusje">
+    <h4>Toevoegen</h4>
+  </div>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <h2>Planten toevoegen</h2>
+    <form class="form_planten" action="index.html" method="post">
+      <label>Naam plant: </label> <input type="text" name="naam"><br><br>
+      <label>Dagen groei: </label> <input type="number" name="Duur"><br><br>
+      <label>Foto: </label> <input type="file" name="foto_plant"><br><br>
+      <label>Omschrijving: </label> <input type="text" name="omschrijving"><br><br>
+      <button type="submit" name="verstuur">Verstuur</button>
+
+    </form>
+  </div>
+</div>
+
 </body>
 </html>
